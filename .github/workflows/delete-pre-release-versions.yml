@@ -1,0 +1,23 @@
+name: delete-pre-release-versions
+on:
+  workflow_dispatch:
+
+jobs:
+  delete-old-packages:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Delete package
+        uses: actions/delete-package-versions@v3
+        with: 
+            owner: NamrataJha
+            repo: 'sample-ruby'
+            package-name: 'samplegem'
+            min-versions-to-keep: 10
+            delete-only-pre-release-versions: "true"
+
+
+ 
+
+
+          

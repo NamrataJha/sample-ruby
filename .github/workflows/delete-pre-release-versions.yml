@@ -12,7 +12,7 @@ jobs:
         with: 
             owner: NamrataJha
             repo: 'sample-ruby'
-            package-name: 'samplegem'
+            package-name: 'samplegem-3'
             min-versions-to-keep: 10
             delete-only-pre-release-versions: "true"
 
